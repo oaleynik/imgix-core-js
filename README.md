@@ -42,12 +42,12 @@ var url = client.buildURL("/path/to/image.png", {
 console.log(url); // => "https://my-social-network.imgix.net/users/1.png?w=400&h=300&s=…"
 ```
 
-### ES6 Modules
+### Using ES6 destructuring
 
 ``` javascript
-import ImgixClient from 'imgix-core-js'
+const {ImgixClient} = require('imgix-core-js');
 
-let client = new ImgixClient({
+const client = new ImgixClient({
   host: 'my-social-network.imgix.net',
   secureURLToken: '<SECURE TOKEN>'
 });
